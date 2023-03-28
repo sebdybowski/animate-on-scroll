@@ -4,7 +4,7 @@ const observer = new IntersectionObserver(entries => {
     })
 });
 
-const sections = document.querySelectorAll('section');
+const sections = document.querySelectorAll('.hide');
 
 console.log(sections);
 

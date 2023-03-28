@@ -10,6 +10,9 @@ section {
     display: grid;
     align-content: center;
     place-items: center;
+}
+
+.hide {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
@@ -21,8 +24,20 @@ section {
     transform: translateX(0);
 }
 
+ul > li:nth-child(2) {
+    transition-delay: 200ms;
+} 
+
+ul > li:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+ul > li:nth-child(4) {
+    transition-delay: 600ms;
+}
+
 @media (prefers-reduced-motion: no-preference) {
-    section {
+    .hide {
         transition: all 1s;
     }
 }
